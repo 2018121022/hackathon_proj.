@@ -1,0 +1,948 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HOME</title>
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel=“stylesheet” href="css/detail.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .rectangle01{/* Rectangle 5 */
+
+        position: absolute;
+        width: 100%;
+        height: 853px;
+        left: 0px;
+        top: 77px;
+        background: linear-gradient(354.6deg, #FDDFDB 4.07%, rgba(253, 223, 219, 0) 49.84%);
+
+
+        }
+        
+        .image00{
+            /* Love game image */
+        position: absolute;
+        width: 460px;
+        height: 460px;
+        left: 255px;
+        top: -30px;
+
+        }
+        .txt01{/* 게시판 */
+
+            position: absolute;
+            width: 200px;
+            height: 74px;
+            left:370px;
+            top: 200px;
+
+            font-family: 'Style Script', cursive;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 90px;
+            line-height: 80px;
+
+            color:rgb(204, 55, 204);
+
+
+
+        }
+        .txt02{/* 게시판 */
+
+            position: absolute;
+            width: 223px;
+            height: 74px;
+            left: 307px;
+            top: 255px;
+
+            font-family:'Nanum Gothic', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 49px;
+
+            color: #000000;
+
+
+
+            }
+            .rectangle02{
+                        /* Rectangle 13 */
+
+            position: absolute;
+            width: 346px;
+            height: 52px;
+            left: 307px;
+            top: 318px;
+
+            background: #FDDFDB;
+            border-radius: 20px;
+
+            }
+            .txt03{
+                /* 더 많은 게시판 보러가기 */
+
+            position: absolute;
+            width: 308px;
+            height: 48px;
+            left: 340px;
+            top: 325px;
+
+            font-family: 'Nanum Gothic', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 37px;
+
+            color: #000000;
+            }
+            
+            .rectangle03{
+                /* Rectangle 7 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 310px;
+            top: 404px;
+            border-radius: 20px;
+            
+
+            }
+            .image01{
+                width:77px;
+                height: auto;
+            }
+            .txt04{/* 연애초보 */
+
+            position: absolute;
+            width: 120px;
+            height: 45px;
+            left: 305px;
+            top: 485px;
+
+            font-family: 'Poor Story', cursive;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+            }
+            .rectangle04{
+                /* Rectangle 8 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 444px;
+            top: 404px;
+
+            background: white;
+            border-radius: 20px;
+
+            }
+            .image02{
+                width:77px;
+                height:auto;
+            }
+            .txt05{
+            /* 장거리 */
+
+            position: absolute;
+            width: 84px;
+            height: 45px;
+            left: 449px;
+            top: 485px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+
+
+            }
+            .rectangle05{
+                /* Rectangle 9 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 578px;
+            top: 404px;
+
+            background: #C4C4C4;
+            border-radius: 20px;
+
+            }
+            .image03{
+            width : 77px;
+            height : auto;
+            }
+            .txt06{
+                /* 데이트 */
+
+            position: absolute;
+            width: 84px;
+            height: 45px;
+            left: 582px;
+            top: 485px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+
+
+            }
+            .rectangle06{
+                /* Rectangle 10 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 310px;
+            top: 529px;
+
+            background: #C4C4C4;
+            border-radius: 20px;
+
+            }
+            .image04{
+                width: 77px;
+                height: auto;
+            }
+            .txt07{
+                /* 권태기 */
+
+            position: absolute;
+            width: 84px;
+            height: 45px;
+            left: 314px;
+            top: 610px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+
+
+            }
+            .rectangle07{
+                /* Rectangle 11 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 444px;
+            top: 529px;
+
+            background: #C4C4C4;
+            border-radius: 20px;
+
+            }
+            .image05{
+                width:77px;
+                height:auto;
+            }
+            .txt08{
+                /* 결혼준비 */
+
+            position: absolute;
+            width: 102px;
+            height: 45px;
+            left: 435px;
+            top: 610px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+
+
+            }
+            .rectangle08{
+                /* Rectangle 11 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 444px;
+            top: 529px;
+
+            background: #C4C4C4;
+            border-radius: 20px;
+
+            }
+            .image06{
+                width:77px;
+                height:auto;
+            }
+            .txt09{
+                /* 돌싱 */
+
+            position: absolute;
+            width: 102px;
+            height: 45px;
+            left: 596px;
+            top: 610px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+
+            color: #000000;
+
+
+            }
+            .rectangle09{
+                /* Rectangle 12 */
+
+            position: absolute;
+            width: 77px;
+            height: 60px;
+            left: 578px;
+            top: 529px;
+
+            background: #C4C4C4;
+            border-radius: 20px;
+
+            }
+            .image07{
+                width:77px;
+                height:auto;
+            }
+            .rectangle10{
+                /* Rectangle 14 */
+
+            position: absolute;
+            width: 650px;
+            height: 459px;
+            left: 765px;
+            top: 205px;
+            }
+            .image08{
+                width:650px;
+                height: auto;
+
+            }
+            .rectangle11{
+                /* Rectangle 15 */
+
+            position: absolute;
+            width: 100%;
+            height: 498px;
+            left: 0px;
+            top: 854px;
+
+            background: #CEFFF6;
+
+            }
+            .txt10{
+                /* love game의 장점 세가지 */
+/* love game의 장점 세가지 */
+
+        position: absolute;
+        width: 700px;
+        height: 80px;
+        left: 560px;
+        top: 51px;
+
+        font-family: Iceberg;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 61px;
+
+        color: #000000;
+
+
+
+            }
+            .circle01{
+            /* Rectangle 27 */
+        /* Rectangle 27 */
+
+            position: absolute;
+            width: 174px;
+            height: 167px;
+            left: 233px;
+            top: 143px;
+
+            background: #C4C4C4;
+            border-radius: 100px;
+
+            }
+            .image09{
+                width : 174px
+            
+            }
+            .txt11{
+                /* 나와 비슷한 사람들의 조언 */
+/* 나와 비슷한 사람들의 조언 */
+
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 210px;
+            top: 329px;
+
+            font-family: Iceberg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+
+
+
+
+
+            }
+            .txt12{
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 205px;
+            top: 370px;
+
+            font-family: 'Nanum Gothic',Do Hyeon;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+            }
+            .circle02{
+                /* Rectangle 28 */
+
+            position: absolute;
+            width: 174px;
+            height: 167px;
+            left: 690px;
+            top: 143px;
+
+            background: #FFFFFF;
+            border-radius: 100px;
+
+            }
+            .image10{
+                width:174px;
+            }
+            .txt13{
+                /* 다수의 의견으로 당신의 상황 판단 */
+
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 660px;
+            top: 329px;
+
+            font-family: 'Nanum Gothic';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .txt14{
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 660px;
+            top: 370px;
+
+            font-family: 'Nanum Gothic';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+            }
+            .circle03{
+           
+            position: absolute;
+            width: 174px;
+            height: 167px;
+            left: 1105px;
+            top: 143px;
+
+            background: #FFFFFF;
+            border-radius: 100px;
+
+            }
+            .image11{
+                width:174px;
+            }
+            .txt15{
+                /* 사연에 맞는 노래 추천 */
+
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 1080px;
+            top: 329px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .txt16{
+            position: absolute;
+            width: 225px;
+            height: 90px;
+            left: 1081px;
+            top: 370px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #000000;
+            }
+            .txt17{
+                /* 당신을 위한 사이트를 추천해드립니다. */
+
+            position: absolute;
+            width: 670px;
+            height: 150px;
+            left: 420px;
+            top: 1511px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 61px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .txt18{
+                /* 당신을 위한 사이트를 추천해드립니다. */
+
+            position: absolute;
+            width: 670px;
+            height: 150px;
+            left: 420px;
+            top: 1570px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 61px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .rectangle12{
+                /* Rectangle 31 */
+
+            position: absolute;
+            width: 207px;
+            height: 256px;
+            left: 71px;
+            top: 1720px;
+
+            background: white;
+            border-radius: 20px;
+
+
+            }
+            .image12{
+                width: 207px;
+                height:auto;
+            }
+            .txt19{
+                /* tinder */
+
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 40px;
+            top: 1950px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .rectangle13{
+                /* Rectangle 32 */
+
+            position: absolute;
+            width: 207px;
+            height: 256px;
+            left: 353px;
+            top: 1720px;
+
+            background: white;
+            border-radius: 20px;
+
+            }
+            .image13{
+            width: 207px;
+            height: auto;
+            }
+            .txt20{/* bumble */
+
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 325px;
+            top: 1950px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+
+            color: #000000;
+
+
+
+            }
+            .rectangle14{
+                /* Rectangle 33 */
+
+            position: absolute;
+            width: 207px;
+            height: 256px;
+            left: 635px;
+            top: 1720px;
+
+            background: white;
+            border-radius: 20px;
+
+            }
+            .image14{
+                width:207px;
+                height: auto;
+            }
+            .txt21{
+            /* 글램 */
+
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 604px;
+            top: 1950px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .rectangle15{
+                /* Rectangle 34 */
+
+            position: absolute;
+            width: 207px;
+            height: 256px;
+            left: 917px;
+            top: 1720px;
+
+            background: white;
+            border-radius: 20px;
+
+            }
+            .image15{
+                width : 207px;
+                height: auto;
+            }
+            .txt22{
+                /* 커넥팅 */
+
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 890px;
+            top: 1950px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .rectangle16{
+                /* Rectangle 35 */
+
+            position: absolute;
+            width: 207px;
+            height: 256px;
+            left: 1205px;
+            top: 1720px;
+
+            background: white;
+            border-radius: 20px;
+
+            }
+            .image16{
+                width: 207px;
+                height: auto;
+            }
+            .txt23{
+                /* 가연 */
+
+            position: absolute;
+            width: 270px;
+            height: 60px;
+            left: 1175px;
+            top: 1950px;
+
+            font-family: Poor Story;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 62px;
+            text-align: center;
+
+            color: #000000;
+
+
+            }
+            .rectangle17{
+                        /* Rectangle 36 */
+
+            position: absolute;
+            width: 100%;
+            height: 191px;
+            left: 2px;
+            top: 2117px;
+
+            background: #000000;
+
+            }
+            .txt24{
+                /* (주) love game */
+
+            position: absolute;
+            width: 399px;
+            height: 51px;
+            left: 12px;
+            top: 2151px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 45px;
+            line-height: 61px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            }
+            .txt25{
+            /* 자주 묻는 질문 */
+
+            position: absolute;
+            width: 243px;
+            height: 55px;
+            left: 21px;
+            top: 2231px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+
+
+            }
+            .txt26{
+            /* 이용약관 */
+
+            position: absolute;
+            width: 243px;
+            height: 55px;
+            left: 242px;
+            top: 2231px;
+
+            font-family: Iceberg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+
+
+
+
+            }
+            .txt27{
+    /* 인스타그램 */
+
+            position: absolute;
+            width: 243px;
+            height: 55px;
+            left: 434px;
+            top: 2231px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            }
+            .txt28{
+    /* 개인정보설정 */
+
+            position: absolute;
+            width: 243px;
+            height: 55px;
+            left: 651px;
+            top: 2230px;
+
+            font-family: Nanum Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            }
+            .txt29{
+            /* 전화번호 : 010-3352-4849 */
+
+            position: absolute;
+            width: 395px;
+            height: 55px;
+            left: 880px;
+            top: 2231px;
+
+            font-family: Iceberg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 37px;
+            text-align: center;
+
+            color: #FFFFFF;
+
+
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #FDDFDB;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{%url 'home' %}" style= "color :black; font-family:Poor story; font-weight: bold;">LOVE GAME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            {% if not user.is_authenticated %}
+                                <a class="nav-link px-3 active" aria-current="page" href="{% url 'login' %}" style= "color :black; font-family:Poor story;">LOG IN</a>
+                            {% endif %}
+                            {% if user.is_authenticated %}
+                                <a class="nav-link px-3 active" aria-current="page" style= "color :black; font-family:Poor story;">
+                                    {{user.닉네임}}님 안녕하세요!
+                                </a>
+                            {% endif %}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="{% url 'logout' %}" style= "color :black; font-family:Poor story;">LOG OUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

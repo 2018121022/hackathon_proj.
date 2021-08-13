@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        body{
+            text-align: center;
+        }
+        .selectstyle{
+            width: 120px;
+            height: 34px;
+            left: 346px;
+            top: 2000px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            background: #FFF0A0;
+            border-radius: 20px;
+        }
+    </style>
+    <br><br><br><br><br><br><br>
+    <h1 style="font-family:Poor story;">{{ question.question_text}}</h1>
+    {% if error_message %}
+    <p><strong> {{error_message}} </strong></p>
+    {% endif %}
+
+    <form action ="{% url 'vote_2' question.id %}" method="post">
+        {% csrf_token %}
+        <br><br>
+        {% for choice in question.choice_set.all %}
+            <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
+            <label for="choice{{ forloop.counter }}" class="selectstyle" style="font-family:Poor story;"> {{ choice.choice_text }}</label>
+            <br>
+        {% endfor %}
+        <br>
+        <a class = "btn btn-primary" href="{% url 'add_choices_to_post_2' question.id %}" style="font-family:Poor story;">선택지 추가하기</a><br><br><br>
+        <input type="submit" style="font-family:Poor story;" value="Vote">
+    </form>
+    <br><br><br><a href="{% url 'index_2' %}"><button type="submit" style="font-family:Poor story;">목차로 돌아가기</button></a>
+{% endblock %}

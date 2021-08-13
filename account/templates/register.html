@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel=“stylesheet” href="css/detail.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #FDDFDB;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{%url 'home' %}" style= "color :black; font-family:Poor story; font-weight: bold;">LOVE GAME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <h1 style= "font-family:Poor story;">Register</h1><br>
+    <form action="{% url 'register' %}" method="post">
+        {%csrf_token%}
+        <p style= "font-family:Poor story;">아이디를 설정해주세요: {{form.username}}</p>
+        <p style= "font-family:Poor story;">비밀번호를 설정해주세요: {{form.password1}}</p>
+        <p style= "font-family:Poor story;">비밀번호를 확인해주세요: {{form.password2}}</p>
+        <p style= "font-family:Poor story;">닉네임을 설정해주세요: {{form.닉네임}}</p>
+        <p style= "font-family:Poor story;">나이를 입력해주세요: {{form.나이}}</p>
+        <p style= "font-family:Poor story;">성별을 입력해주세요: {{form.성별}}</p>
+        <p style= "font-family:Poor story;">직업을 입력해주세요: {{form.직업}}</p>
+        <p style= "font-family:Poor story;">연애횟수를 입력해주세요: {{form.연애횟수}}</p>
+        <button type='submit' style= "font-family:Poor story;">Register</button>
+    </form>
+    <br><br>
+    <a href="{% url 'home' %}"><button style= "font-family:Poor story;">Home</button></a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <br><br><br><br><br><br><br>
+    <h1 style="font-family:Poor story;">New music</h1>
+    <br><br>
+    <form method="POST" class="post-form" style="font-family:Poor story;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button type="submit" style="font-family:Poor story;">Send</button>
+    </form>
+    <br><br>
+    <a href="{% url 'index_6' %}"><button type="submit" style="font-family:Poor story;">목차로 돌아가기</button></a>
+{% endblock %}
