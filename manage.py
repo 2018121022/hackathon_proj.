@@ -20,3 +20,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+web: gunicorn hackathon_proj.wsgi
+
